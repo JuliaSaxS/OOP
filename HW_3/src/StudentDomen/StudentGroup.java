@@ -8,8 +8,8 @@ public class StudentGroup implements Iterable<Student>,Comparable<StudentGroup> 
     private long groupid;
 
     /**
-     * @param students список студ.
-     * @param groupid  номер гр.
+     * @param students список студентов
+     * @param groupid  номер группы
      */
     public StudentGroup(List<Student> students, long groupid) {
         this.group = students;
