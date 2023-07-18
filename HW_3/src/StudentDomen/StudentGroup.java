@@ -55,7 +55,6 @@ public class StudentGroup implements Iterable<Student>,Comparable<StudentGroup> 
             }
         };
 
-        return new SGIterator(students);
     }
 
     @Override
