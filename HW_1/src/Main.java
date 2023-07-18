@@ -1,7 +1,7 @@
 import Domen.*;
 import VendingMachines.VendingMachine;
 
-public class App {
+public class Main {
     public static void main(String[] args) throws Exception {
         Product item1 = new Product(1, "Lays", "Chips", 59);
         item1.setPrice(98);

@@ -5,13 +5,13 @@ import Classes.SpecialClient;
 import Classes.TaxService;
 import Interfaces.iActorBehaviour;
 
-public class App {
+public class Main {
     public static void main(String[] args) throws Exception {
         Market market = new Market();
-        iActorBehaviour client1 = new OrdinaryClient("Boris");
-        iActorBehaviour client2 = new OrdinaryClient("Dasha");
-        iActorBehaviour client3 = new SpecialClient("Prezident"+" VIP", 1);
-        iActorBehaviour client4 = new PromoClient("Vall"+ " участвующий в акции", 12);
+        iActorBehaviour client1 = new OrdinaryClient("Olga");
+        iActorBehaviour client2 = new OrdinaryClient("Igor");
+        iActorBehaviour client3 = new SpecialClient("Mr.White"+" VIP", 1);
+        iActorBehaviour client4 = new PromoClient("John"+" участвующий в акции", 12);
 
         market.acceptToMarket(client1);
         market.acceptToMarket(client2);
