@@ -3,44 +3,44 @@ package StudentDomen;
 /** наследник User */
 
 public class Teacher extends User {
-    private int teacherid;
-    private String acadeDegree;
+    private int teacherId;
+    private String academicDegree;
 
     /**
      * конструктор
      * 
-     * @param firstName   Имя
-     * @param secondName  Фамилия
+     * @param firstName   имя
+     * @param secondName  фамилия
      * @param age         возраст
-     * @param teacherid   id
-     * @param acadeDegree степень
+     * @param teacherId   id
+     * @param academicDegree ученая степень
      */
-    public Teacher(String firstName, String secondName, int age, int teacherid, String acadeDegree) {
+    public Teacher(String firstName, String secondName, int age, int teacherId, String academicDegree) {
         super(firstName, secondName, age);
-        this.teacherid = teacherid;
-        this.acadeDegree = acadeDegree;
+        this.teacherId = teacherId;
+        this.academicDegree = academicDegree;
     }
 
-    public int getTeacherid() {
-        return teacherid;
+    public int getTeacherId() {
+        return teacherId;
     }
 
-    public void setTeacherid(int teacherid) {
-        this.teacherid = teacherid;
+    public void setTeacherId(int teacherId) {
+        this.teacherId = teacherId;
     }
 
-    public String getAcadeDegree() {
-        return acadeDegree;
+    public String getAcademicDegree() {
+        return academicDegree;
     }
 
-    public void setAcadeDegree(String acadeDegree) {
-        this.acadeDegree = acadeDegree;
+    public void setAcademicDegree(String academicDegree) {
+        this.academicDegree = academicDegree;
     }
 
     @Override
     public String toString() {
-        return "Teacher{"+"teacherid = " + teacherid +'\'' +", acadeDegree = " 
-        + acadeDegree+'\'' +", firstName = " + super.getFirstName() + '\'' +
+        return "Teacher{"+"teacherId = " + teacherId +'\'' +", academicDegree = " 
+        + academicDegree+'\'' +", firstName = " + super.getFirstName() + '\'' +
         ", secondName = " + super.getSecondName() + '\'' +
         ", age = " + super.getAge() + "}";
     }

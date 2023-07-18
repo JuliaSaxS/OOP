@@ -3,32 +3,32 @@ package StudentDomen;
 /** наследник User */
 
 public class Student extends User implements Comparable<Student> {
-    private long studentid;
+    private long studentId;
 
     /**
      * конструктор
      * 
-     * @param firstName  Имя
-     * @param secondName Фамилия
+     * @param firstName  имя
+     * @param secondName фамилия
      * @param age        возраст
-     * @param studentid  id
+     * @param studentId  id
      */
-    public Student(String firstName, String secondName, int age, long studentid) {
+    public Student(String firstName, String secondName, int age, long studentId) {
         super(firstName, secondName, age);
-        this.studentid = studentid;
+        this.studentId = studentId;
     }
 
-    public long getStudentid() {
-        return studentid;
+    public long getStudentId() {
+        return studentId;
     }
 
-    public void setStudentid(long studentid) {
-        this.studentid = studentid;
+    public void setStudentId(long studentId) {
+        this.studentId = studentId;
     }
 
     @Override
     public String toString() {
-        return "Student{" + "studentid = " + studentid + '\''
+        return "Student{" + "studentId = " + studentId + '\''
                 + ", firstName = " + super.getFirstName() + '\'' +
                 ", secondName = " + super.getSecondName() + '\'' +
                 ", age = " + super.getAge()
@@ -42,10 +42,10 @@ public class Student extends User implements Comparable<Student> {
     public int compareTo(Student o) {
         System.out.println(super.getFirstName()+" - "+o.getFirstName());
         if (super.getAge() == o.getAge()) {
-            if (this.studentid == o.studentid) {
+            if (this.studentId == o.studentId) {
                 return 0;
             }
-            if (this.studentid < o.studentid) {
+            if (this.studentId < o.studentId) {
                 return -1;
             }
             return 1;

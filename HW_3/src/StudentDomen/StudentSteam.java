@@ -8,7 +8,7 @@ public class StudentSteam implements Iterable<StudentGroup> {
     /** Список групп */
     private List<StudentGroup> teams;
     /** Идентификатор */
-    public int idgroup;
+    public int idGroup;
 
     /**
      * конструктор
@@ -17,7 +17,7 @@ public class StudentSteam implements Iterable<StudentGroup> {
      */
     public StudentSteam(int number) {
         this.teams = new ArrayList<>();
-        this.idgroup = number;
+        this.idGroup = number;
     }
 
     /**
@@ -28,8 +28,8 @@ public class StudentSteam implements Iterable<StudentGroup> {
         this.teams.add(Team);
     }
 
-    public int getIdgroup() {
-        return idgroup;
+    public int getIdGroup() {
+        return idGroup;
     }
 
     public List<StudentGroup> getTeams() {
@@ -38,12 +38,12 @@ public class StudentSteam implements Iterable<StudentGroup> {
 
     @Override
     public String toString() {
-        String teamout = new String();
-        teamout = String.format("\n№Потока %d", getIdgroup());
+        String teamOut = new String();
+        teamOut = String.format("\n№Потока %d", getIdGroup());
         for (StudentGroup studentGroup: teams){
-            teamout = teamout + "\n"+ studentGroup.getGroup() + "\n";
+            teamOut = teamOut + "\n"+ studentGroup.getGroup() + "\n";
         }
-        return teamout;
+        return teamOut;
     }
 
     /** Анонимный итератор */

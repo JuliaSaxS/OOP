@@ -5,15 +5,15 @@ import java.util.List;
 
 public class StudentGroup implements Iterable<Student>,Comparable<StudentGroup> {
     private List<Student> group;
-    private long groupid;
+    private long groupId;
 
     /**
      * @param students список студентов
-     * @param groupid  номер группы
+     * @param groupId  id группы
      */
-    public StudentGroup(List<Student> students, long groupid) {
+    public StudentGroup(List<Student> students, long groupId) {
         this.group = students;
-        this.groupid = groupid;
+        this.groupId = groupId;
     }
 
     public List<Student> getGroup() {
@@ -24,12 +24,12 @@ public class StudentGroup implements Iterable<Student>,Comparable<StudentGroup> 
         this.group = students;
     }
 
-    public long getGroupid() {
-        return groupid;
+    public long getGroupId() {
+        return groupId;
     }
 
-    public void setGroupid(long groupid) {
-        this.groupid = groupid;
+    public void setGroupId(long groupId) {
+        this.groupId = groupId;
     }
 
     /**
@@ -55,7 +55,7 @@ public class StudentGroup implements Iterable<Student>,Comparable<StudentGroup> 
             }
         };
 
-        // return new SGIterator(students);
+        return new SGIterator(students);
     }
 
     @Override
@@ -80,7 +80,7 @@ public class StudentGroup implements Iterable<Student>,Comparable<StudentGroup> 
     public String toString() {
         return "StudentGroup{" +
                 "group = " + group +
-                ", idGroup = " + groupid +
+                ", idGroup = " + groupId +
                 '}';
     }
 }
