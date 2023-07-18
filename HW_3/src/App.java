@@ -16,14 +16,14 @@ public class App {
         Student s5 = new Student("Илья", "Горличенко", 21, (long) 111);
         Student s6 = new Student("Ольга", "Иванова", 23, (long) 121);
 
-        List<Student> lisStud = new ArrayList<Student>();
+        List<Student> listStud = new ArrayList<Student>();
         listStud.add(s1);
         listStud.add(s2);
         listStud.add(s3);
         listStud.add(s4);
         StudentGroup group = new StudentGroup(listStud, 111);
 
-        List<Student> lisStud2 = new ArrayList<Student>();
+        List<Student> listStud2 = new ArrayList<Student>();
         listStud2.add(s5);
         listStud2.add(s6);
         StudentGroup group2 = new StudentGroup(listStud2, 121);
