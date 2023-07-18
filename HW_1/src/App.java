@@ -1,4 +1,4 @@
-import Domen;
+import Domen.*;
 import VendingMachines.VendingMachine;
 
 public class App {
