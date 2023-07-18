@@ -10,11 +10,11 @@ import java.util.List;
 
         StudentStream stream = new StudentStream(1);
 
-        StudentGroup group1 = new StudentGroup("Group 1", 20);
+        StudentGroup group1 = new StudentGroup("1", 29);
 
-        StudentGroup group2 = new StudentGroup("Group 2", 15);
+        StudentGroup group2 = new StudentGroup("2", 31);
 
-        StudentGroup group3 = new StudentGroup("Group 3", 10);
+        StudentGroup group3 = new StudentGroup("3", 30);
 
 
         stream.addGroup(group1);
