@@ -9,12 +9,12 @@ import StudentDomen.*;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        Student s1 = new Student("Сергей", "Иванов", 25, (long) 101);
-        Student s2 = new Student("Андрей", "Сидоров", 23, (long) 111);
-        Student s3 = new Student("Иван", "Петров", 23, (long) 301);
-        Student s4 = new Student("Даша", "Цветкова", 24, (long) 121);
-        Student s5 = new Student("Лена", "Незабудкина", 25, (long) 231);
-        Student s6 = new Student("Иван", "Ивано", 23, (long) 2345);
+        Student s1 = new Student("Юрий", "Баранов", 20, (long) 101);
+        Student s2 = new Student("Соня", "Глазкова", 21, (long) 111);
+        Student s3 = new Student("Елизавета", "Петрова", 22, (long) 301);
+        Student s4 = new Student("Николай", "Колоша", 20, (long) 121);
+        Student s5 = new Student("Илья", "Горличенко", 21, (long) 231);
+        Student s6 = new Student("Ольга", "Иванова", 23, (long) 2345);
 
         List<Student> lisStud = new ArrayList<Student>();
         lisStud.add(s1);
