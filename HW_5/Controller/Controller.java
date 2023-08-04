@@ -1,11 +1,7 @@
 package Controller;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
-
 import Model.*;
-
-import View.*;
 
 //**Контролер  */
 public class Controller {
@@ -57,29 +53,25 @@ public class Controller {
         else {
             System.out.println("Список студентов пуст!");
         }
-
-
-        //MVC
-        //view.printAllStudent(model.getAllStudent());
     }
     /** Метод вызова команд для пользователя */
     public void run(){
         Commands com = Commands.NONE;
         Boolean getNewIteration = true;
         while (getNewIteration) {
-            String command = view.prompt("Введите команду!");
+            String command = view.prompt("Введите команду! (LIST - список студентов, DELETE - удаление из списка, EXIT - выход.)");
             com = Commands.valueOf(command.toUpperCase());
             switch (com) {
                 case EXIT:
                 getNewIteration = false;
-                System.out.println("Выход из программы");
+                System.out.println("Выход из программы.");
                     break;
                 case LIST:
                 getAllStudent();
                 updateView();
                     break;
                 case DELETE:
-                String dlt = view.prompt("Введите номер студента, которого хотите удалить");
+                String dlt = view.prompt("Введите номер студента, которого хотите удалить.");
                 Long id = Long.parseLong(dlt);
                 DTLstg(id);
 
