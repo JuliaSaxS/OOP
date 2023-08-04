@@ -17,8 +17,8 @@ public class View implements iGetView {
 
     @Override
     public String prompt(String message){
-        Scanner iscanner = new Scanner(System.in);
+        Scanner iScanner = new Scanner(System.in);
         System.out.println(message);
-        return iscanner.nextLine();
+        return iScanner.nextLine();
     }
 }
