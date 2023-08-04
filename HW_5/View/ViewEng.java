@@ -5,7 +5,6 @@ import java.util.Scanner;
 import Controller.iGetView;
 import Model.Student;
 
-/** Аглийском языке */
 public class ViewEng implements iGetView {
     /**
      * Печать студентов
