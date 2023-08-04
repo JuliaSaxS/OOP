@@ -45,13 +45,13 @@ public class FileModel implements iGetModel {
         try {
             File file = new File(fileName);
             FileReader fr = new FileReader(file);
-            BufferedReader reader = new BufferedReader(fr);
-            String line = reader.readLine();
+            BufferedReader bufferedReader = new BufferedReader(fr);
+            String line = bufferedReader.readLine();
             while (line != null) {
                 String[] param = line.split(" ");
-                Student pers = new Student(param[0], param[1], Integer.parseInt(param[2]), Long.parseLong(param[3]));
-                students.add(pers);
-                line = reader.readLine();
+                Student person = new Student(param[0], param[1], Integer.parseInt(param[2]), Long.parseLong(param[3]));
+                students.add(person);
+                line = bufferedReader.readLine();
             }
 
         } catch (Exception e) {
