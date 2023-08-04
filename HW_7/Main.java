@@ -17,7 +17,7 @@ public class Main {
         double material = iScanner.nextDouble();
         System.out.println("Введите мнимую часть:");
         double imaginary1 = iScanner.nextDouble();
-        ComplexNumder n1 = new ComplexNumder(material, imaginary1);
+        ComplexNumber n1 = new ComplexNumber(material, imaginary1);
 
         System.out.print("Введите действие (+,*,/): ");
         char oper = iScanner.next().charAt(0);
