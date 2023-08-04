@@ -14,26 +14,23 @@ public class ComCal implements iCalculator {
     }
 
     @Override
-    public ComplexNumder add(ComplexNumder n1, ComplexNumder n2) {
-        ComplexNumder result = n1.add(n2);
+    public ComplexNumber add(ComplexNumber n1, ComplexNumber n2) {
+        ComplexNumber result = n1.add(n2);
         log.log("Cложение: " + n1 + " + " + n2 + " = " + result);
         return result;
     }
 
     @Override
-    public ComplexNumder multiply(ComplexNumder n1, ComplexNumder n2) {
-        ComplexNumder result = n1.multiplication(n2);
+    public ComplexNumber multiply(ComplexNumber n1, ComplexNumber n2) {
+        ComplexNumber result = n1.multiplication(n2);
         log.log("Умножение: " + n1 + " * " + n2 + " = " + result);
         return result;
     }
 
     @Override
-    public ComplexNumder divide(ComplexNumder n1, ComplexNumder n2) {
-        ComplexNumder result = n1.divide(n2);
+    public ComplexNumber divide(ComplexNumber n1, ComplexNumber n2) {
+        ComplexNumber result = n1.divide(n2);
         log.log("Деление: " + n1 + " / " + n2 + " = " + result);
         return result;
     }
-
-
-
 }

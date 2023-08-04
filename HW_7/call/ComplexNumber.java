@@ -1,6 +1,6 @@
 package call;
 
-public class ComplexNumder {
+public class ComplexNumber {
     private double material;
     private double imaginary;
 
@@ -9,7 +9,7 @@ public class ComplexNumder {
      * @param material      Вещественная 
      * @param imaginary     Мнимая часть 
      */
-    public ComplexNumder(double material, double imaginary) {
+    public ComplexNumber(double material, double imaginary) {
         this.material = material;
         this.imaginary = imaginary;
     }
@@ -18,7 +18,7 @@ public class ComplexNumder {
      * 
      * @return Вещественная часть
      */
-    public double getmaterial() {
+    public double getMaterial() {
         return material;
     }
 
@@ -34,10 +34,10 @@ public class ComplexNumder {
      * 
      * @return Результат сложения
      */
-    public ComplexNumder add(ComplexNumder other) {
+    public ComplexNumber add(ComplexNumber other) {
         double sumMaterial = this.material + other.material;
         double sumImaginary = this.imaginary + other.imaginary;
-        return new ComplexNumder(sumMaterial, sumImaginary);
+        return new ComplexNumber(sumMaterial, sumImaginary);
     }
 
     /**
@@ -45,10 +45,10 @@ public class ComplexNumder {
      *
      * @return Результат умножения
      */
-    public ComplexNumder multiplication(ComplexNumder other) {
+    public ComplexNumber multiplication(ComplexNumber other) {
         double productMaterial = this.material * other.material - this.imaginary * other.imaginary;
         double productImaginary = this.material * other.imaginary + this.imaginary * other.material;
-        return new ComplexNumder(productMaterial, productImaginary);
+        return new ComplexNumber(productMaterial, productImaginary);
     }
 
     /**
@@ -56,11 +56,11 @@ public class ComplexNumder {
      *
      * @return Результат деления
      */
-    public ComplexNumder divide(ComplexNumder other) {
+    public ComplexNumber divide(ComplexNumber other) {
         double divisor = other.material * other.material + other.imaginary * other.imaginary;
         double qMaterial = (this.material * other.material + this.imaginary * other.imaginary) / divisor;
         double qImaginary = (this.imaginary * other.material - this.material * other.imaginary) / divisor;
-        return new ComplexNumder(qMaterial, qImaginary);
+        return new ComplexNumber(qMaterial, qImaginary);
     }
 
     @Override

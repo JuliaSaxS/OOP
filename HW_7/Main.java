@@ -1,10 +1,8 @@
 import java.util.Scanner;
 
-import call.ComCal;
-import call.ComplexNumder;
-import call.iCalculator;
-import logger.FL;
-import logger.Logger;
+import call.*;
+import logger.*;
+
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -27,19 +25,19 @@ public class Main {
         double material2 = iScanner.nextDouble();
         System.out.println("Введите мнимую часть:");
         double imaginary2 = iScanner.nextDouble();
-        ComplexNumder n2 = new ComplexNumder(material2, imaginary2);
+        ComplexNumber n2 = new ComplexNumber(material2, imaginary2);
 
         switch (oper) {
             case '+':
-                ComplexNumder sum = cal.add(n1, n2);
+                ComplexNumber sum = cal.add(n1, n2);
                 System.out.println("Сумма: " + sum);
                 break;
             case '*':
-                ComplexNumder prod = cal.multiply(n1, n2);
+                ComplexNumber prod = cal.multiply(n1, n2);
                 System.out.println("Произведение: " + prod);
                 break;
             case '/':
-                ComplexNumder quot = cal.divide(n1, n2);
+                ComplexNumber quot = cal.divide(n1, n2);
                 System.out.println("Частное: " + quot);
                 break;
             default:

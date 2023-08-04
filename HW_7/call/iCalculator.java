@@ -12,7 +12,7 @@ public interface iCalculator {
      * @param n2 второе кч
      * @return результат
      */
-    ComplexNumder add(ComplexNumder n1, ComplexNumder n2);
+    ComplexNumber add(ComplexNumber n1, ComplexNumber n2);
 
     /**
      * умножение
@@ -21,7 +21,7 @@ public interface iCalculator {
      * @param n2 второе кч
      * @return результат
      */
-    ComplexNumder multiply(ComplexNumder n1, ComplexNumder n2);
+    ComplexNumber multiply(ComplexNumber n1, ComplexNumber n2);
 
     /**
      * деление
@@ -30,5 +30,5 @@ public interface iCalculator {
      * @param n2 второе кч
      * @return результат
      */
-    ComplexNumder divide(ComplexNumder n1, ComplexNumder n2);
+    ComplexNumber divide(ComplexNumber n1, ComplexNumber n2);
 }
